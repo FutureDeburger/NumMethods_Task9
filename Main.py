@@ -18,7 +18,6 @@ def Gaussian_method(sle):
     x1 = (i1[3] - i1[1] * x2 - i1[2] * x3) / i1[0]
 
     list_of_approximate_roots = [x1, x2, x3]
-    #print(f'Полученные приближённые корни: {list_of_approximate_roots}')
 
     return list_of_approximate_roots, print_orig_sle, print_first_dec, print_second_dec
 

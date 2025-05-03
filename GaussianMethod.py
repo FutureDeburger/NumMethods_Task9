@@ -60,7 +60,7 @@ def find_delta(orig_sle, eps):
     return Gaussian_method(new_sle)[0]
 
 def find_x(approx_roots, amends):
-    list_x = [x0 + d for x0, d in zip(approx_roots, amends)]
+    list_x = [x0 + delta for x0, delta in zip(approx_roots, amends)]
     return list_x
 
 def check_roots(orig_sle, orig_roots):

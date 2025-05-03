@@ -30,8 +30,12 @@ if __name__ == '__main__':
              3.15]
 
     solution = gauss_seidel(SLE_A, SLE_B, epsilon)
+    print('Решение матрицы:')
     print(solution)
 
+
+
+    # Тестовая матрица
 
     test_a = [[10, 1, 1],
              [2, 10, 1],
@@ -40,4 +44,19 @@ if __name__ == '__main__':
     test_b = [12, 13, 14]
 
     test_solution = gauss_seidel(test_a, test_b, epsilon)
+    print('Решение тестовой матрицы:')
     print(test_solution)
+
+
+
+    # Привожу матрицу к треугольному виду
+
+    new_SLE_a = [ [2.47, 0.65, -1.88],
+                  [0.0, -1.9563157894736842, -0.4254251012145751],
+                  [0.0, 0.0, 3.3821721404772256]]
+
+    new_SLE_b = [1.24, 2.7182591093117408, 2.8130034560543034]
+
+    solution_with_diagonal_matrix = gauss_seidel(new_SLE_a, new_SLE_b, epsilon)
+    print('Решение треугольной матрицы:')
+    print(solution_with_diagonal_matrix)
